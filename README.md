@@ -1,6 +1,15 @@
 # DeniseVenturusApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+## Node Package Manager
+To run the bellow commands it is necessary to download and install Node Package Manager, which is available in https://nodejs.org/en/
+
+## Angular CLI
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9. Download and install it in order to serve the app.
+
+## Install Dependecies
+
+Run `npm install` to install all the dependencies.
 
 ## Development server
 
@@ -14,14 +23,8 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Deployed version
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+A hosted version of the app can be found here https://dedacpo.github.io/teste-venturus/
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
