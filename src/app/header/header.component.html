@@ -1,0 +1,59 @@
+<header  *ngIf="user != undefined">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12" id="logo_image">
+        <div class="logo-square">
+          <div class="logo-border-square">
+            <i class="fas fa-question"></i>
+          </div>
+        </div>
+        <div id="company_name">
+          Venturus Sports
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12" id="user_info">
+        <div id="user_name">
+          <span style="display:flex; justify-content:center;" mat-button [matMenuTriggerFor]="appMenu">
+            <div style="margin:auto;" id="user_initials">
+              <div class="user_circle">
+                <div class="user_inside">
+                  {{initials}}
+                </div>
+              </div>
+            </div>
+            <div style="margin:auto;">
+                {{user.name}}
+            </div>
+            
+            <i style="margin:auto;" class="fas fa-chevron-down"></i>
+          </span>
+          <mat-menu #appMenu="matMenu">
+            <button *ngFor="let item of user.menuItems" mat-menu-item>{{item.name}}</button>
+            <button class="border-top" mat-menu-item>Log Out</button>
+          </mat-menu>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <section id="section_breadcrumbs">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12" id="breadcrumb">
+          <span class="content">
+            <a routerLink="/"><i class="fas fa-home"></i></a>
+          </span>
+          <span *ngFor="let breadcrumb of breadcrumbs" class="path">
+            <i class="fas fa-chevron-right"></i>
+            <a routerLink="{{breadcrumb.url}}">{{breadcrumb.label}}</a>
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+</header>

@@ -1,0 +1,142 @@
+<section class="container">
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+      <h2>Registration</h2>
+    </div>
+    <div class="col-lg-9 col-md-9 col-sm-12 col-12 line">
+      <div></div>
+    </div>
+  </div>
+  <div class="row" id="help">
+    <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+      <h4>Need Help?</h4>
+      <div class="row">
+        <div class="col-lg-4 col-sm-4 col-md-4 col-4 icon">
+          <i class="far fa-life-ring"></i>
+        </div>
+        <div class="col-lg-8 col-sm-8 col-md-8 col-8">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+      <h4>Why Register?</h4>
+      <div class="row">
+        <div class="col-lg-4 col-sm-4 col-md-4 col-4 icon">
+          <i class="fas fa-heartbeat"></i>
+        </div>
+        <div class="col-lg-8 col-sm-8 col-md-8 col-8">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+      <h4>What people are saying...</h4>
+      <div class="row">
+        <div class="col-lg-4 col-sm-4 col-md-4 col-4 icon">
+          <i class="far fa-smile"></i>
+        </div>
+        <div class="col-lg-8 col-sm-8 col-md-8 col-8">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="row margin-top-30 divisor">
+    <div class="col-lg-1 col-md-1 col-sm-1 col-1">
+
+    </div>
+    <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+      <hr />
+      <form class="row form-new-user" [formGroup]="newUser" (ngSubmit)="onFormSubmit()" >
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+            <mat-form-field floatLabel="never"> 
+              <span><b>Username</b></span>
+                <input required
+                  [ngStyle]="{'border-color': focusStateUsername == true ? '#1abc9c' : '#c1c1c1'}"
+                 (focus)="focusStateUsername = true" (focusout)="focusStateUsername = false" matInput
+                 formControlName="username">
+                <mat-hint *ngIf="focusStateUsername">Type the username</mat-hint>
+              </mat-form-field>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+            <mat-form-field floatLabel="never"> 
+              <span class="optional-form"><b>City</b><i>optional</i></span>
+                <input
+                  [ngStyle]="{'border-color': focusStateCity == true ? '#1abc9c' : '#c1c1c1'}"
+                 (focus)="focusStateCity = true" (focusout)="focusStateCity = false" matInput formControlName="city">
+                <mat-hint *ngIf="focusStateCity">Type the city</mat-hint>
+              </mat-form-field>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+            <mat-form-field floatLabel="never"> 
+              <span><b>Name</b></span>
+                <input required
+                type="text"
+                  [ngStyle]="{'border-color': focusStateName == true ? '#1abc9c' : '#c1c1c1'}"
+                 (focus)="focusStateName = true" (focusout)="focusStateName = false" matInput formControlName="name">
+                <mat-hint *ngIf="focusStateName">Type the name</mat-hint>
+              </mat-form-field>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12 radio">
+              <span><b>Ride in group</b></span><br/>
+              <mat-radio-group required aria-label="Ride in group" formControlName="ride">
+                  <mat-radio-button  value="Always">Always</mat-radio-button>
+                  <mat-radio-button  value="Sometimes">Sometimes</mat-radio-button>
+                  <mat-radio-button  value="Never">Never</mat-radio-button>
+                </mat-radio-group>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+            <mat-form-field floatLabel="never"> 
+              <span><b>Email</b></span>
+                <input required
+                  type="email"
+                  [ngStyle]="{'border-color': focusStateEmail == true ? '#1abc9c' : '#c1c1c1'}"
+                 (focus)="focusStateEmail = true" (focusout)="focusStateEmail = false" matInput formControlName="email">
+                <mat-hint *ngIf="focusStateEmail">Type the email</mat-hint>
+              </mat-form-field>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12 radio">
+              <span><b>Days of the week</b></span>
+              <ng-container>
+                  <div>
+                      <mat-checkbox (change)="changeDays(0)">Sun</mat-checkbox>
+                      <mat-checkbox (change)="changeDays(1)">Mon</mat-checkbox>
+                      <mat-checkbox (change)="changeDays(2)">Tue</mat-checkbox>
+                      <mat-checkbox (change)="changeDays(3)">Wed</mat-checkbox>
+                      <mat-checkbox (change)="changeDays(4)">Thur</mat-checkbox>
+                      <mat-checkbox (change)="changeDays(5)">Fri</mat-checkbox>
+                      <mat-checkbox (change)="changeDays(6)">Sat</mat-checkbox>
+                  </div>
+              </ng-container>
+              
+              
+              
+        </div>
+        <div class="buttons">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-1">
+      
+              </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 buttonsCol">
+                    <button type="submit" id="save">Save</button>
+                    <div style="cursor:pointer" (click)="discard()" id="discard">Discard</div>
+                  </div>
+            </div>
+             
+          </div>
+          
+        </div>
+      </form>
+    </div>
+    <div class="col-lg-1 col-md-1 col-sm-1 col-1">
+
+    </div>
+  </div>
+  
+</section>

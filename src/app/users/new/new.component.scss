@@ -1,0 +1,77 @@
+@import '../../../sass/variables';
+
+section{
+    margin-top:20px;
+    margin-bottom: 30px;
+    #help{
+        .icon{
+            display: flex;
+            i{
+                font-size: 80px;
+                color: $secondaryColor;
+                margin:auto;
+            }
+        }
+        h4{
+            color:#84d5c5;
+            margin: 20px 0;
+        }
+        
+    }
+    .divisor hr{
+        border-width: 2px;
+    }
+    .mat-form-field-label-wrapper{
+        display: none;
+    }
+    .form-new-user{
+        .mat-form-field{
+            width: 100%;
+        }
+        input{
+            margin-top: 10px;
+            width: 100%;
+            border:2px solid #c1c1c1;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        
+    }
+    .mat-radio-group{
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .radio{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .radio div{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .buttons{
+        width: 100%;
+        #save,
+        #discard{
+            padding: 10px 20px;
+            border-radius: 5px;
+            border-color: transparent;
+        }
+        #save{
+            background-color:$secondaryColor;
+            color:white;  
+        }
+        #discard{
+            background-color:#e3e3e3;
+        }
+        .buttonsCol{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

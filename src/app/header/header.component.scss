@@ -1,0 +1,93 @@
+@import '../../sass/variables';
+
+header{
+    margin-top: 30px;
+}
+
+#section_breadcrumbs{
+    background-color: #f9f9f9;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+#logo_image{
+    display: flex;
+    .logo-square{
+        width: 40px;
+        height: 40px;
+        background-color:$secondaryColor;
+        border-radius: 5px;
+        display: flex;
+        .logo-border-square{
+            width: 25px;
+            height: 25px;
+            margin: auto;
+            border:3px solid white;
+            border-radius: 3px;
+            display: flex;
+            i{
+                margin: auto;
+                color: white;
+            }
+        }
+    }
+    #company_name{
+        margin: auto 10px;
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size: 20px;
+    }
+   
+}
+
+#user_info{
+    display:flex;
+    justify-content: flex-end;
+    .user_circle{
+        border:1px solid $mainFontColor;
+        border-radius: 100%;
+        padding: 5px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        .user_inside{
+            margin: auto;
+        }        
+    }
+    #user_name{
+        display: flex;
+        span{
+            margin: auto;  
+            cursor: pointer;     
+            margin-left: 10px;    
+        }
+       
+    }
+}
+
+#breadcrumb{
+    
+    .content{
+        color:$secondaryColor;
+        
+    }
+    span{
+        margin-right: 10px;
+        i{
+            margin-right: 10px;             
+        }
+        .fa-chevron-right{
+            color:#999999;
+        }        
+        a:hover{
+            color:$secondaryColor !important;
+        }
+        a{
+            color:$mainFontColor; 
+        }
+        a:focus{
+            outline: none;
+        }
+    }
+}
+
