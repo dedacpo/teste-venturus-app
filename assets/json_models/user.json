@@ -1,0 +1,20 @@
+
+
+{
+    "id":"0",
+    "name":"Jason Bourne",
+    "menuItems":[
+        {
+            "id":"0",
+            "name":"Friends List"
+        },
+        {
+            "id":"1",
+            "name":"Saved Items"
+        },
+        {
+            "id":"2",
+            "name":"User Preferences"
+        }
+    ]
+}
