@@ -1,4 +1,4 @@
-# DeniseVenturusApp
+# DenisetestSportsInfoApp
 
 ## Node Package Manager
 To run the bellow commands it is necessary to download and install Node Package Manager, which is available in https://nodejs.org/en/
@@ -21,6 +21,6 @@ The build is under the folder `dist`.
 
 ## Deployed version
 
-A hosted version of the app can be found here https://dedacpo.github.io/teste-venturus/
+A hosted version of the app can be found here https://dedacpo.github.io/teste-testSportsInfo/
 
 
