@@ -21,6 +21,6 @@ The build is under the folder `dist`.
 
 ## Deployed version
 
-A hosted version of the app can be found here https://dedacpo.github.io/teste-testSportsInfo/
+A hosted version of the app can be found here https://dedacpo.github.io/test-sports-info/
 
 
